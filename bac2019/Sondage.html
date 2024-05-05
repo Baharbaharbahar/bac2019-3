@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="controle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form  action="Sondage.php" name="f1" method="post">
+        <fieldset>
+            <legend>Sondage</legend>
+            <h4>Authentification/Incription:</h4>
+            <label for="">@Mail:</label>
+            <input type="email" name="email" id="email"> <br><br>
+            <label for="">Mot de passe:</label>
+            <input type="password" name="password" id="password"> <br><br>
+            <label for="">Genre:</label>
+            <select name="genre" id="genre">
+                <option value="">Indiquer votre genre</option>
+                <option value="">Masculin</option>
+                <option value="">Féminin</option>
+            </select> <br><br>
+            <label for="">Les réseaux sociaux:</label> <br>
+            <table>
+                <tr>
+                    <th><label for="">N°</label></th>
+                    <th><label for="">Question/Affirmation </label></th>
+                    <th><label for="">Oui</label></th>
+                    <th><label for="">Non</label></th>
+                    <th><label for="">Sans avis</label></th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>les information partagees sur les reseaux sont fiables</td>
+                    <td><input type="radio" name="a" id="o1" value="1O"> </td>
+                    <td><input type="radio" name="a" id="n1" value="1N"></td>
+                    <td><input type="radio" name="a" id="s1" value="1S"></td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>
+                        <p>l'uage des réseaux sociaux par les enfants doit etre sous le controle parental</p>
+                    </td>
+                    <td><input type="radio" name="b" id="o2" value="2O"></td>
+                    <td><input type="radio" name="b" id="n2" value="2N"></td>
+                    <td> <input type="radio" name="b" id="s2" value="2S"></td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>les reseaux sociaux deviennent une neccessite pour les citoyens</td>
+                    <td><input type="radio" name="c" id="o3" value="3O"></td>
+                    <td><input type="radio" name="c" id="n3" value="3N"></td>
+                    <td><input type="radio" name="c" id="s3" value="3S"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="reset" value="Annuler"></td>
+                    <td><input type="submit" value="Envoyer"onclick="return test()"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Controle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="Statistiques.php" method="post">
+        <fieldset>
+            <legend>Statistique </legend>
+            <label >Theme du sandage </label>
+            <select name="sandage" id="sandage">
+                <option value="">choisir un Theme</option>
+                <option value="">les reseaux sociaux</option>
+                <option value="">les jeux video</option>
+            </select> <br>
+            <input type="submit" value="Editer" onclick=" return editer()">
+        </fieldset>
+    </form>
+</body>
+</html>
