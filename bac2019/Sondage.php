@@ -7,7 +7,6 @@ $R1=$_POST['a'];
 $R2=$_POST['b'];
 $R3=$_POST['c'];
 require("config.php");
-$conn=mysqli_connect($server,$username,$password,$bd);
 $sql1="select * from participant where  mail='$mail';";
 $res1=mysqli_query($conn,$sql1);
 if ( mysqli_num_rows($res1)!=0)
